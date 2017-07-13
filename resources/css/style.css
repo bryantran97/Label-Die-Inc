@@ -1,5 +1,11 @@
+/* Imported Fonts */
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Yantramanav:300,400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+/* ================================= */
+/*              Globals              */
+/* ================================= */
 
 .center {
 	float: none;
@@ -8,77 +14,132 @@
 	text-align: center;
 }
 
-.banner {
-	height: 640px;
-}
 
-.banner-content {
+/* ================================= */
+/*           Banner (First)          */
+/* ================================= */
+.banner-content { /* This visually centers the text on banner */
 	margin-top: 150px;
 	color: white;
 }
 
 .banner-content h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 45px; font-weight: 700;
+
 	text-transform: uppercase;
-	font-family: 'Roboto'; font-weight: 700;
-	font-size: 45px;
 }
 
-.banner-content h3{
-	font-family: 'Yantramanav'; font-weight: 200;
-	font-size: 18px;
-	font-weight: 200;
+.banner-content h3 {
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 18px; font-weight: 200;
 }
+
+/* ================================= */
+/*        Got you Page (Second)      */
+/* ================================= */
+
+.gotyou {
+	background: #ededed;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.gotyou h1 {
+	font-family: 'Yantramanav';
+	font-size: 28px;
+}
+
+
+.gotyou h3 {
+	padding-bottom: 50px;
+}
+
+/* ================================= */
+/*          Info Page (Second)       */
+/* ================================= */
 
 .info {
+	font-family: 'Open Sans', sans-serif;
 	background-color: #fff;
-	padding: 50px 0 50px 0;
+	padding: 50px 0;
 	height: 100%;
 }
 
 .info h4 {
+	font-family: 'Yantramanav', sans-serif;
 	font-size: 30px;
 }
 
-#sp-content {
-	margin-top: 25px;
+.services {
+	padding-bottom: 50px;
+}
+
+.services p {
+	padding-top: 20px;
+}
+
+.services hr {
+	width: 350px;
+	border-bottom: 1px solid #333333;
 }
 
 .box {
-	padding: 50px;
-	background: #d1d1d1
+	border-radius: 10px;
+	margin-top: 20px;
+	padding: 5px 20px 5px 20px;
+	width: 100%;
+	height: 500px;
+	background: #ededed;
+}
+
+.box h4, .box p {
+	margin-top: 50px;
+}
+
+
+
+
+
+
+/* ================================= */
+/*           Media Queries           */
+/* ================================= */
+@media(min-width:992px){
+	/* Banner */
+	.banner {
+		height: 450px;
+	}
+	.banner-content {
+		margin-top: 60px;
+	}
+}
+
+@media(min-width:768px){
+	/* Banner */
+	.banner {
+		height: 425px;
+	}
+	.banner-content {
+		margin-top: 40px;
+	}
+	.banner-content h1 {
+		font-size: 35px;
+	}
+
 }
 @media(max-width:767px){
+	/* Banner */
 	.banner {
 		height: 400px;
 	}
 	.banner-content {
-		margin-top: 60px;
+		margin-top: 30px;
 	}
 	.banner-content h1 {
 		font-size: 35px;
 	}
 	.banner-content h3 {
 		margin-top: 13px;
-	}
-
-}
-@media(min-width:768px){
-	.banner {
-		height: 450px;
-	}
-	.banner-content {
-		margin-top: 70px;
-	}
-		.banner-content h1 {
-		font-size: 35px;
-	}
-
-}
-@media(min-width:992px){
-	.banner {
-		height: 500px;
-	}
-	.banner-content {
-		margin-top: 75px;
 	}
 }
