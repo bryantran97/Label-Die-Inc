@@ -1,77 +1,235 @@
 <!DOCTYPE html>
 <html>
+<!-- HEAD -->
 <head>
-	<title></title>
-	<!-- CSS Files -->
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Bryan Tran | Full Stack Developer and UI Designer</title>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta name="title" content="Bryan Tran | Full-Stack Developer, UI Designer, and Freelancer">
+    <meta name="description" content="A portfolio created by visual designer specialized in Front-End Development and minimal UI, Bryan Tran.">
+    <meta name="author" content="Bryan Tran">
+    <meta content="A portfolio created by visiual designer specialized in Front-End Development and minimal UI, Bryan Tran." property="og:description">
+    <meta content="http://bryan-tran.com" property="og:url">
+    <meta content="http://bryan-tran.com/assets/images/google-image.png" property="og:image">
+    <link rel="canonical" href="http://bryan-tran.com/">
+    <link rel="img-src" href="/assets/images/google-image.png">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:300,400" rel="stylesheet">
+    <link rel="icon" href="assets/images/totoro-umberlla.png">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/responsive-text.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-	<!-- JS Files -->
-	<script src="assets/js/jquery-3.2.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <!-- Scripts -->
+    <script src="assets/js/jquery-3.2.1.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" defer></script>
+    <script src="assets/js/bootstrap.min.js" defer></script>
+    <script src="assets/js/script.js" async></script>
 </head>
+<!-- BODY -->
 <body>
-    <div class="container index-page">
-        <div class="row">
-            <div class="logo">
-                <img src="assets/images/totoro-white.png">
-            </div>
-            <div class="options">
-                <ul>
-                    <li class="regular-sub-header"><button class="about-me-button">About Me</button></li>
-                    <li class="regular-sub-header"><button class="projects-button">Projects</button></li>
-                    <li class="regular-sub-header"><button class="works-button">Works</button></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    
-    <div class="container about-me-page" style="display: none;">
-        <div class="row">
-            <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
-                <h1>Projects</h1>
-                <img style="width:200px; height: 200px; position:relative; bottom: 10px; right: 20px;"src="assets/images/totoro-umberlla.png">
-                <br />
-                <br />
-                <p>GITHUB</p>
-            </div>
-            <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
-                <div class="row">
-aasdasd
+    <div id="wrapper">
+        <div class="container index-page">
+            <div class="row">
+                <div class="logo">
+                    <img src="assets/images/totoro-white.png">
                 </div>
-                
-                                <div class="row">
-                asdasdasd
-                </div>
-                
-                                <div class="row">
-                asdsd
-                </div>
-            </div>
-        
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <button class="return-homepage-button">Return to homepage</button>
-            </div>
-        </div>
-    </div>
+                <div class="options">
+                    <ul>
+                        <li class="regular-sub-header">
+                            <button class="about-button">About </button>
+                        </li>
+                        <li class="regular-sub-header">
+                            <button class="portfolio-button">Portfolio</button>
+                        </li>
+                        <li class="regular-sub-header">
+                            <button class="resume-button">Résumé</button>
+                        </li>
+                    </ul>
+                </div> <!-- end of options -->
+            </div> <!-- end of row -->
+        </div> <!-- end of index-page -->
 
-	<!-- Your Personal JS file -->
-    <script>
-        $(".about-me-button").click(function(){
-            $(".index-page").fadeOut('slow', function() {
-                $(".about-me-page").fadeIn('slow');
-            });
-        });
-        
-        $(".return-homepage-button").click(function (){
-            $(".about-me-page").fadeOut('slow', function(){
-                $(".index-page").fadeIn('slow');
-            });
-        });
-    </script>
-    <script src="assets/js/script.js"></script>
+        <div class="container about-page">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="large-header">Bryan Tran</h1>
+                    <h2 class="small-sub-header">New portfolio, who dis?</h2>
+
+                    <br />
+                    <a class="small-p" href="https://github.com/bryantran97" target="_blank">GITHUB</a>
+                    <a class="small-p" href="https://linkedin.com/in/bryantran97" target="_blank">LINKEDIN</a>
+                    <a class="small-p" href="mailto:bryantran97@gmail.com" target="_blank">EMAIL</a>
+
+                    <div class="about-paragraph">
+                        <p class="regular-p">Hey. I'm Bryan! I'm an aspiring web developer and I create websites as a hobby. I started around two months ago but have been working on sites everyday since. I work mostly on front-end projects but occasionally dabble with back-end (with Node.js). I have a knack for UI design and love being able to code my design sketches. I love learning new technologies and creating cool life-changing web applications. I am inspired by beautiful yet simple designs.</p>
+
+                        <p class="regular-p">I'm currently a junior at The University of Texas at Dallas and I'm majoring in Computer Science. I'm also seeking internships for NEXT spring/summer/fall semesters as a junior web developer. So please send me an email using the link above if you are interested in recruiting me. Or email me at bryantran97@gmail.com.</p>
+
+                        <p class="regular-p"><span class="regular-p" style="color: #d67b4a;">Here's a list of some of my skills:</span>
+                        <br />Web Design (Photoshop &amp; Illustrator), Minimal UI Design, HTML, CSS, JavaScript, Responsive Design, CSS Frameworks (Bootstrap &amp; Semantic UI), jQuery, React.js, Node.js, Express, Databases (MongoDB), RESTful Practices, APIs, Command Lines, Github, Bash, and Heroku.</p>
+                        
+                        <p class="regular-p">Other related programming skills: OOP, C++, Java, Swing, GUI, IRC-Bots, Android</p>
+                        
+                        <p class="regular-p">Listen to my current favorite song on youtube: &nbsp;<a href="https://www.youtube.com/watch?v=6mtn1YWyJas" target="_blank">swell - im sorry</a></p>
+                    </div> <!-- end of paragraph -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row return">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <button class="return-homepage-button-about"><strong>Return to homepage</strong></button>
+                </div>
+            </div> <!-- end of row -return -->
+        </div> <!-- end of about-page -->
+
+        <div class="container portfolio-page">
+            <div class="row projects">
+                <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
+                    <h1 class="medium-header">Projects</h1>
+                    <img style="width:200px; height: 200px; position:relative; bottom: 10px; right: 20px;" src="assets/images/totoro-umberlla.png">
+                </div> <!-- end of col -->
+                <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
+                    <ul>
+                        <li>
+                            <h2 class="small-sub-header"><a href="http://groupuputd.herokuapp.com" target="_blank">GroupUpUTD</a></h2>
+                            <p class="regular-p">Web Application that allows UTDallas students to register and login to create event postings on campus
+                            <br />
+                            <br />Technologies: Node.js, Express, MongoDB, Passport.js, Bootstrap, jQuery, Heroku, Github</p>
+                        </li>
+
+                        <li>
+                            <h2 class="small-sub-header"><a href="http://mini-overbuff.herokuapp.com" target="_blank">Mini-Overbuff</a></h2>
+                            <p class="regular-p">Web Application that retrieves a Competitive Overwatch player's stats and displays top 10 players in the database
+                                <br />
+                                <br />Technologies: Node.js, Express, MongoDB, Semantic UI, jQuery, OW-API, Heroku, Github</p>
+                        </li>
+
+                        <li>
+                            <h2 class="small-sub-header"><a href="http://bryantran97.github.io/responsive-text" target="_blank">Responsive-Text</a></h2>
+                            <p class="regular-p">CSS Plugin that resizes text automatically for you when downsizing web browser width. Fun fact, I'm using it for this portfolio right now
+                                <br />
+                                <br />Technologies: CSS, Bootstrap, Github</p>
+                        </li>
+
+                        <li>
+                            <h2 class="small-sub-header"><a href="#">What To Eat</a></h2>
+                            <p class="regular-p">[In Progress] Web Application that generates a random food to eat for indecisive and displays a location to get it in your local area
+                                <br />
+                                <br />Technologies: Node.js, Express, Semantic UI, jQuery, React, Yelp API, Heroku, Github</p>
+                        </li>
+                    </ul>
+                </div> <!-- end of col -->
+            </div> <!-- end of projects row -->
+            <div class="row websites">
+                <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
+                    <h1 class="medium-header">Websites &amp; Portfolios</h1>
+                </div> <!-- end of col -->
+                <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
+                    <ul>
+                        <li>
+                            <h2 class="small-sub-header"><a href="https://bryantran97.github.io/hanadfw/" target="_blank">HanaDFW</a></h2>
+                            <p class="regular-p">Fake-Client Practice Website (Restaurant)</p>
+                        </li>
+
+                        <li>
+                            <h2 class="small-sub-header"><a href="https://bryantran97.github.io/pp-four/" target="_blank">Fourth Portfolio</a></h2>
+                            <p class="regular-p">We-Bare-Bears themed personal portfolio</p>
+                        </li>
+
+                        <li>
+                            <h2 class="small-sub-header"><a href="https://bryantran97.github.io/pp-three/" target="_blank">Third Portfolio</a></h2>
+                            <p class="regular-p">Beirut (indie-folk band) themed personal portfolio</p>
+                        </li>
+
+                        <li>
+                            <h2 class="small-sub-header"><a href="https://bryantran97.github.io/pp-two" target="_blank">Second Portfolio</a></h2>
+                            <p class="regular-p">Bootstrap themed personal portfolio</p>
+                        </li>
+
+                        <li>
+                            <h2 class="small-sub-header"><a href="https://bryantran97.github.io/pp-one" target="_blank">First Portfolio</a></h2>
+                            <p class="regular-p">First portfolio ever made. Created by following along a Youtube tutorial</p>
+                        </li>
+                        
+                        <li>
+                            <h2 class="small-sub-header"><a href="https://github.com/bryantran97/static-workshop" target="_blank">Basic Portfolio</a></h2>
+                            <p class="regular-p">Portfolio made to teach at the UTDMakerspace Workshop</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row codealongs">
+                <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
+                    <h1 class="medium-header">Code Alongs</h1>
+                </div> <!-- end of col -->
+                <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
+                    <ul>
+                        <li>
+                            <h2 class="small-sub-header"><a href="https://bryantran97.github.io/patatap-clone/" target="_blank">Patatap Clone</a></h2>
+                            <p class="regular-p">Key Button-Sound binding app using Howler.js and Paper.js, from Udemy Full-Stack Web Developer Bootcamp course by Colt Steele</p>
+                        </li>
+                        <li>
+                            <h2 class="small-sub-header"><a href="https://bryantran97.github.io/rgb-game/" target="_blank">RGB Game</a></h2>
+                            <p class="regular-p">Basic JavaScript game app, from Udemy Full-Stack Web Developer Bootcamp course by Colt Steele</p>
+                        </li>
+                        <li>
+                            <h2 class="small-sub-header"><a href="https://bryantran97.github.io/todo-list/" target="_blank">Grocery-List App</a></h2>
+                            <p class="regular-p">JavaScript web app to put/markout Groceries, from a Youtube tutorial</p>
+                        </li>
+                        <li>
+                            <h2 class="small-sub-header"><a href="https://github.com/bryantran97/javascript/tree/master/Projects/bookmark" target="_blank">Bookmarker</a></h2>
+                            <p class="regular-p">Basic bookmarking app that utilizes localStorage in JavaScript, from a Youtube tutorial</p>
+                        </li>
+                        <li>
+                            <h2 class="small-sub-header"><a href="https://github.com/bryantran97/react/tree/master/Projects/youtube-search" target="_blank">Youtube-Search</a></h2>
+                            <p class="regular-p">Basic youtube search using Youtube Search API and React.js, from Udemy React/Redux course by Stephen Grider</p>
+                        </li>
+                        <li>
+                            <h2 class="small-sub-header"><a href="https://github.com/bryantran97/blog-app" target="_blank">Blog App</a></h2>
+                            <p class="regular-p">Anonymous blog app using Node.js to learn RESTful routing methods, from Udemy Full-Stack Web Developer Bootcamp course by Colt Steele</p>
+                        </li>
+                    </ul>
+                </div> <!-- end of col -->
+            </div> <!-- end of codealongs row -->
+            
+    
+            <div class="row non-web">
+                <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
+                    <h1 class="medium-header">Non-Web Projects</h1>
+                </div> <!-- end of col -->
+                <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
+                    <ul>
+                        <li>
+                            <h2 class="small-sub-header"><a href="https://github.com/bryantran97/hatersbackoff" target="_blank">Haters Back Off</a></h2>
+                            <p class="regular-p">Hackathon Project created for the HackUTD Anti-Cyberbullying contest. This project warns users to not use foul language in IRC specific channels</p>
+                        </li>
+                        
+                        <li>
+                            <h2 class="small-sub-header"><a href="#">Java GUI Calculator</a></h2>
+                            <p class="regular-p">Created a GUI replica of Window's programing calculator with functional buttons, operations, and interative binary boxes</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row return">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <button class="return-homepage-button-portfolio"><strong>Return to homepage</strong></button>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 icons">
+                    <ul>
+                        <li><a href="http://github.com/bryantran97/" target="_blank"><i class="fa fa-github"></i></a></li>
+                        <li><a href="http://linkedin.com/in/bryantran97" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="mailto:bryantran97@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div> <!-- end of return row -->
+        </div> <!-- end of portfolio-page -->
+
+    </div> <!-- end of wrapper -->
 </body>
+
 </html>

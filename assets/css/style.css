@@ -1,17 +1,47 @@
+/* ================= */
+/*      BODY/HTML    */
+/* ================= */
 body, html {
     font-family: 'Open Sans';
     width: 100%;
     height: 100%;
     color: white;
 }
-
 body {
-    background-position: 80% 20%;;
+    z-index: 1;
+    position: absolute;
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/spiritedaway.jpg');
+    background-position: 80% 20%;;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    position: absolute;
+    background-color: #263747;
 }
+#wrapper {
+    display: none;
+}
+/* ================= */
+/*       Globals     */
+/* ================= */
+ul{
+    padding: 0;
+}
+a:hover,
+a:focus,
+a:active,
+a:visited{
+    text-decoration: none;
+}
+.return {
+    text-align: center;
+    margin: 75px auto;
+}
+.return button {
+    padding: 0;
+    margin-bottom: 25px;
+}
+/* ================= */
+/*        INDEX      */
+/* ================= */
 .logo img {
     margin-top: 7%;
     margin-left: 5%;
@@ -20,18 +50,15 @@ body {
     height: auto;
     background-size: contain;
     background-repeat: no-repeat;
-    overflow: auto;
-}
-ul{
-    padding: 0;
 }
 .options li{
+    text-align: center;
     list-style: none;
     display: inline-block;
-    text-align: center;
 }
 .options li:nth-of-type(1){
     padding-left: 20px;
+    margin-left: 40px;
 }
 .options li:nth-of-type(1),
 .options li:nth-of-type(2){
@@ -43,29 +70,132 @@ button {
     color: white;
     background: transparent;
     border: none;
-    
     padding: 10px 0;
     outline: none;
     cursor: pointer;
+    transition: 0.4s all ease;
 }
 button:focus {
     outline: 0 !important;
 }
-.options li:first-of-type{
-    margin-left: 40px;
+.about-button:hover {
+    color: #ba4141;
 }
-.about-me-page {
-    margin-top: 5%;
-    padding: 0 50px;
+.portfolio-button:hover {
+    color: #d67b4a;
 }
-.about-me-page h1 {
+.resume-button:hover {
+    color: #d6a54a;
+}
+/* ================= */
+/*      ABOUT-ME     */
+/* ================= */
+.about-page {
+    font-family: 'Open Sans';
+    margin-top: 9%;
+    padding: 0 20px;
+    display: none;
+}
+.about-page h1 {
+    font-weight: 700;
     text-transform: uppercase;
+}
+.about-page a:nth-of-type(1),
+.about-page a:nth-of-type(2),
+.about-page a:nth-of-type(3){
+    float: left;
+    margin-right: 25px;
+    color: #b58938;
+    transition: 0.4s all ease;
+}
+.about-page a:last-of-type{
+    float: none;
+    transition: 0.4s all ease;
+}
+.about-page a:hover {
+    color: #ffd484;
+}
+.about-paragraph {
+    padding-top: 50px;
     font-weight: 300;
 }
-.about-me-page .row {
+.about-page p {
+    color: #cecece;
+}
+/* ================= */
+/*      PORTFOLIO    */
+/* ================= */
+.portfolio-page {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    margin-top: 5%;
+    padding: 0 20px;
+    display: none;
+}
+.portfolio-page h1 {
+    text-transform: uppercase;
+}
+.portfolio-page .row {
     margin-top: 40px;
 }
-
+.portfolio-page li {
+    list-style: none;
+    color: #d6d6d6;
+    padding-bottom: 5px;
+}
+.portfolio-page a {
+    transition: 0.4s all ease;
+}
+.portfolio-page .projects a {
+    color: #ba4141;
+}
+.portfolio-page .projects a:hover {
+    color: #ff6b6b
+}
+.portfolio-page .websites a {
+    color: #ba6030;
+}
+.portfolio-page .websites a:hover {
+    color: #ff965e;
+}
+.portfolio-page .codealongs a {
+    color: #b58938;
+}
+.portfolio-page .codealongs a:hover {
+    color: #ffd484;
+}
+.portfolio-page .non-web a {
+    color: #27a343;
+}
+.portfolio-page .non-web a:hover {
+    color: #7cff9a;
+}
+/* ================= */
+/*       SM ICONS    */
+/* ================= */
+.icons li {
+    font-size: 21px;
+    display: inline;
+    padding: 0 10px;
+}
+.icons a {
+    color: #e8e8e8;
+}
+.icons a .fa-github:hover {
+    transition: 0.4s all ease;
+    color: #c57aff;
+}
+.icons a .fa-linkedin:hover {
+    transition: 0.4s all ease;
+    color: #2e99f7;
+}
+.icons a .fa-envelope:hover {
+    transition: 0.4s all ease;
+    color: #ff7070
+}
+/* ================= */
+/*   MQUERIES-WIDTH  */
+/* ================= */
 @media (max-width: 576px){
     .logo img {
         margin-top: 10%
@@ -74,13 +204,19 @@ button:focus {
         padding-left: 0;
     }
 }
-
-@media (max-height: 767px){
-        .logo img {
-        margin-top: 4%
+@media (max-width: 767px){
+        .portfolio-page li:first-of-type{
+    padding-top: 50px;
     }
 }
-
+/* ================= */
+/*  MQUERIES-HEIGHT  */
+/* ================= */
+@media (max-height: 767px){
+        .logo img {
+        margin-top: 3%
+    }
+}
 @media (max-height: 324px){
         .logo img {
         margin-top: 2%
