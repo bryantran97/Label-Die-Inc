@@ -25,5 +25,5 @@
             });
         });
         $(".resume-button").click(function(){
-            alert("No resume yet!");
+            window.location.href='http://bryan-tran.com/assets/current-resume.pdf';
         });
